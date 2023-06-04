@@ -1,2 +1,2 @@
-# notes-yaml-toml
-Various notes in YAML/TOML
+# notes-yaml-toml-jupyter_notebook
+Various notes in YAML/TOML/ipynb
