@@ -1,2 +1,2 @@
-# notes-toml
-Various notes in TOML
+# notes-yaml-toml
+Various notes in YAML/TOML
