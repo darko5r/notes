@@ -1,0 +1,34 @@
+format = "TOML"
+title = "Firefox about:config tweaks"
+
+[enable_webgpu]
+  [dom.webgpu.enabled]
+  enabled = true
+  flag = true
+  if_disable = """
+    • When set to false, it would disable the WebGPU feature in the DOM (Document Object Model) of the browser.
+    • WebGPU is a modern web graphics API that provides lower-level access to GPU (Graphics Processing Unit) functionality,
+      enabling advanced graphics rendering and computation on the web.
+    • Disabling this option would prevent the usage of WebGPU in the browser.
+  """
+
+  [gfx.webgpu.force-enabled]
+  enabled = true
+  flag = true
+  if_disable = """
+    • When set to false, it would disable the forced enabling of WebGPU in the graphics subsystem.
+    • This option is related to explicitly enabling WebGPU support even in cases where it might not be natively supported
+      or enabled by default.
+    • Disabling this option would allow the graphics subsystem to determine the appropriate usage of WebGPU based on system capabilities.
+  """
+
+  [dom.webgpu.indirect-dispatch.enabled]
+  enabled = true
+  flag = true
+  if_disable = """
+    • When set to false, it would disable the usage of indirect dispatch in the WebGPU DOM API.
+    • Indirect dispatch is a feature in WebGPU that allows for indirect control of dispatch commands.
+    • Dispatch commands are used to launch parallel computations on the GPU. With indirect dispatch, you can specify command buffer
+      objects that contain the details of the dispatch commands, allowing for more dynamic control and flexibility in executing GPU computations.
+    • Disabling this option would prevent the usage of indirect dispatch capabilities in the WebGPU DOM API.
+  """
