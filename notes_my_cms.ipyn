@@ -52,6 +52,9 @@
     "- todo: Add updated posts, date and time \n",
     "- todo: Add top posts - top 24h, top 7 days, top 30 days\n",
     "- todo: Add CSS globals, variables\n",
+    "- todo: Style up post.html page\n",
+    "- todo: Fix quirks mode\n",
+    "- todo: Make css,js,ts pages\n",
     "- todo: Try and use firebase authentication\n",
     "- todo: Try and use auth0\n",
     "- todo: Style up login register "
